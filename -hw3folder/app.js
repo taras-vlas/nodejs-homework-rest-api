@@ -17,6 +17,9 @@ app.get('/', (req, res) => {
   res.send('<h2>Home page</h2>')
 })
 
+// app.set('view ', 'ejs')
+// app.set('views', './views')
+
 app.use('/api/v1/contacts', contactsRouter)
 
 app.use((_, res) => {
