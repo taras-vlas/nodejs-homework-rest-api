@@ -10,9 +10,6 @@ app.use(express.json())
 
 app.use('/api/v1/users', usersRouter)
 app.use('/api/v1/orders', ordersRouter)
-// POST - /api/v1/auth/register (signup) рег.
-// POST - /api/v1/auth/login   (signin)  вх.
-// GET - /api/v1/auth/logout  (signout) вих.
 
 app.use((_, res) => {
   res.status(404).json({

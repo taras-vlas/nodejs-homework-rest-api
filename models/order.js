@@ -9,7 +9,7 @@ const orderSchema = Schema(
     },
     owner: {
       type: Types.ObjectId,
-      ref: 'users', // в якій колекції шукати
+      ref: 'users',
       required: true,
     },
   },
